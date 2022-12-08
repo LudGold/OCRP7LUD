@@ -1,0 +1,21 @@
+.error{
+    margin-top: 100px;
+}
+.error-txt{
+    color: #ff6060;
+    font-weight: 500;
+    
+    justify-content: space-around;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.returnHome{
+
+position: absolute;
+left: 40.14%;
+right: 40.14%;
+top: 81.93%;
+bottom: 15.53%;
+font-size: 18px;
+}

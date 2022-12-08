@@ -1,0 +1,26 @@
+.img-banner{
+  position: absolute; 
+   width: auto;
+   height: 255px;
+   left: 100px;
+   top: 170px;
+   filter: brightness(52%);
+   opacity: 0.8;
+   border-radius: 25px;
+      
+   } 
+   
+   .title-banner{
+       color: #FFFFFF;
+       margin-top: 11rem;
+       display: flex;
+       justify-content: center;
+       position: relative;
+       z-index: 1; 
+       font-size: 48px;
+       font-style: normal;
+       
+   }
+   
+ 
+   
