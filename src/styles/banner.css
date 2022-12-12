@@ -4,15 +4,18 @@
    height: 255px;
    left: 100px;
    top: 170px;
-   filter: brightness(52%);
-   opacity: 0.8;
+   filter: brightness(70%);
    border-radius: 25px;
       
    } 
+   .img-banner_home{
+    width: 100%;
+   }
    
    .title-banner{
        color: #FFFFFF;
        margin-top: 11rem;
+       font-family: Montserrat;
        display: flex;
        justify-content: center;
        position: relative;
@@ -21,6 +24,16 @@
        font-style: normal;
        
    }
+   @media only screen and (max-width: 768px) {
+    .title-banner{
+      font-size: 32px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+   }
+
    
  
    

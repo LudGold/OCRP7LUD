@@ -1,0 +1,13 @@
+.about_banner_mob {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .about_banner_mob {
+      display: block;
+    }
+  
+    .about-banner_home {
+      display: none;
+    }
+  }

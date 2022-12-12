@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from './pages/About'; 
 import Erreur from './pages/Error';
-/* import Card from './pages/Card' */;
+import OneFlat from './pages/OneFlat' 
 
 export default function Router() {
   return (
@@ -12,7 +12,7 @@ export default function Router() {
          
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/logement/:id" element={<Card />} /> */}
+        <Route path="/OneFlat/:id" element={<OneFlat />} />
         <Route path="/about" element={<About />} /> 
         <Route path="*" element={<Erreur />} />
 
