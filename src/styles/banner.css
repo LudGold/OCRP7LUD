@@ -1,6 +1,6 @@
 .img-banner{
   position: absolute; 
-   width: auto;
+   object-fit: cover;
    height: 255px;
    left: 100px;
    top: 170px;

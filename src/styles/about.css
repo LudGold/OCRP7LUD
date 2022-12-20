@@ -1,10 +1,17 @@
-.about_banner_mob {
+.Container{
+  width: 80%;
+  height: auto;
+  margin: 10px auto 0;
+}
+
+img.about_banner_mob{
     display: none;
   }
   
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 650px) {
     .about_banner_mob {
       display: block;
+      border-radius: 25px;
     }
   
     .about-banner_home {
