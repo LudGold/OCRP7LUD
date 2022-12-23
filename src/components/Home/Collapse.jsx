@@ -5,7 +5,7 @@ export default function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false);
 
     return isOpen ? (
-        <div className="Collapse">
+        <div className="collapse">
             <div className="collapse_up">
             <div className="collapse_encart_opened">
             <p className="collapse-title">

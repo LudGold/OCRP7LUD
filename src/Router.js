@@ -12,7 +12,7 @@ export default function Router() {
          
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/OneFlat/:id" element={<OneFlat />} />
+        <Route path="/oneflat/:id" element={<OneFlat />} />
         <Route path="/about" element={<About />} /> 
         <Route path="*" element={<Erreur />} />
 

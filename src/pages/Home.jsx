@@ -11,7 +11,8 @@ export default function Home() {
   
     <div className="Home">
       <Header />
-      <Banner/>
+      <Banner />
+      
       <Card />
       <Footer />
       </div>

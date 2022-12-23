@@ -1,43 +1,46 @@
- import React, {useState, useEffect} from "react";
-
+ /* import React, {useState, useEffect} from "react"; */
+ import Datas from "../../datas/flat.json"
 import '../../styles/card.css' 
 
 function Card() {
-    const [flats, setFlats] = useState([]);
-    const getFlat = () => {
-        fetch('flat.json')
+    /* const [flats, setFlats] = useState([]); */
+  console.log(Datas)
+    /* const getFlat = () => {
+      fetch({ Datas })
                     
-            .then(res => {
-            return res.json();
-            })
-            .then(fetchedFlats => {
-            setFlats(fetchedFlats)
-            })
+        .then(res => {
+          return res.json();
+        })
+        .then(fetchedFlats => {
+          setFlats(fetchedFlats)
+        })
             
         .catch(err => console.log(err))
     }
     useEffect(() => {
         getFlat()
-    }, []);
-    return (
+    }, []); */
+      return (
       <section className="contain">
         <div className="Cards">
-          {flats.map((flat) => (
-            <div className="Card">
-              <a href={flat.id} key={flat.id}>
-                <div className="Box">
-                  <div className="Box_Title">
+            {Datas.map((flat) => {
+              return (
+                <div className="Card" key={flat.id} >
+                  <a href={"/oneflat/" + flat.id} >
                     <h2 className="Title">{flat.title}</h2>
-                  </div>
-                  <img className="Cover" src={flat.cover} alt="Logement"></img>
-                </div>
-              </a>
-            </div>
-          ))}
+                    <img className="Cover" src={flat.cover} alt="Logement"></img>
+
+                  </a>
+                </div>)
+            })
+          }
         </div>
       </section>
-    );
-};
+          )
+}
+          
+            
+
 
 export default Card
 
