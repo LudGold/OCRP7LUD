@@ -19,7 +19,7 @@ export default function About() {
        <img src="Banner_About_Mobile.png" alt="" className="about_banner_mob" />
      </div>
 
-     <div className="Container">
+     <div className="about_container">
        <Collapse
          title="Fiabilité"
          description="Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -35,7 +35,7 @@ export default function About() {
          description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite.
               N'hésitez pas à nous contacter si vous avez la moindre question."
        />
-       <Collapse className="collapse_btn"
+       <Collapse 
          title="Responsabilité"
          description="La sécurité est la priorité de Kasa. 
              Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. 

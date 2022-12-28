@@ -1,0 +1,38 @@
+img.gallery_img{
+  width: 1240px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.gallery_arrows{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 18rem;
+
+
+}
+.gallery_arrowLeft {
+  position: relative;
+  left: 40px;
+
+}
+
+  .gallery_arrowRight {
+    position: relative;
+    left: 70rem; 
+        
+  }
+
+  .gallery_count{
+    position: relative;
+    left: 40rem;
+    top: -2rem; 
+    color: #FFFF;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat'
+    ;
+
+  }
+   

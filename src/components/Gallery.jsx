@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import "../styles/gallery.css"
 
 function Gallery({ pictures }) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,6 +18,7 @@ function Gallery({ pictures }) {
     }
     return (
       <>
+        <header/>
         {pictures.map(
           (picture, index) =>
             currentSlide === index && (
@@ -24,18 +26,20 @@ function Gallery({ pictures }) {
                 <span className="gallery_count">
                   {index + 1}/{length}
                 </span>
-                <img src={picture} alt="appartement" />
+                <img src={picture} alt="appartement" className='gallery_img' />
                 {length > 1 ? (
                   // si il y a plus d'une image, on affiche les boutons, sinon rien
                   <>
+                    <div className='gallery_arrows'>
                     <div className="gallery_arrowLeft" onClick={prevSlide}>
-                                    {/* <img src="arrow_left.svg" alt="arrow preview" /> */}
-                                    <span>PREV</span>
+                                    {<img src="/arrow_left.svg" alt="arrow preview" /> }
+                                    
                     </div>
                     <div className="gallery_arrowRight" onClick={nextSlide}>
-                                    {/* <img src="arrow_right.svg"  alt="arrow next" /> */}
-                                    <span>NEXT</span>
-                    </div>
+                                    { <img src="/arrow_right.svg"  alt="arrow next" /> }
+                                    
+                      </div>
+                      </div>
                   </>
                 ) : null}
               </div>

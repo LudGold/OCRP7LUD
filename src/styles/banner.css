@@ -8,8 +8,13 @@
    border-radius: 25px;
       
    } 
-   .img-banner_home{
-    width: 100%;
+   .about-banner_home{
+    width: 90%;
+    border-radius: 25px;
+    margin-left: 1rem;
+   }
+   .img-banner{
+    width: 90%;
    }
    
    .title-banner{

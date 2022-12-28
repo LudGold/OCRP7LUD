@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 
 
-
 function Header() {
-    return (
+  return (
+      <section className="container_header">
         <div className="header">
             {/* utiliser navlink pour savoir si c'est actif ou non 
             <NavLink
@@ -18,7 +18,7 @@ function Header() {
           À Propos
         </NavLink> */}
             <nav className='lmj-nav'>
-                <img className="lmj-logo-kasa" src="kasa-logo.png"  alt="logo Kasa"></img>
+                <img className="lmj-logo-kasa" src="/kasa-logo.png"  alt="logo Kasa"></img>
                 <ul>
                     <li>
                     <NavLink to="/" className="accueil">Accueil</NavLink>
@@ -31,7 +31,8 @@ function Header() {
         
        
         
-    </div>
+      </div>
+      </section>
       
     );
             
