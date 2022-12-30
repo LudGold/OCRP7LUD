@@ -6,7 +6,7 @@ export default function Collapse(props) {
 
     return isOpen ? (
         <div className="collapse">
-            <div className="collapse_up">
+            
             <div className="collapse_encart_opened">
             <p className="collapse-title">
                 {props.title}
@@ -25,11 +25,11 @@ export default function Collapse(props) {
                 {props.description}
             </p>
             </div>
-            </div>
+         
     ):(
   
    
-            <div className="collapse_down">
+            
                 <div className="collapse_encart_closed">
                 <p className="collapse-title">
                 {props.title}
@@ -43,7 +43,7 @@ export default function Collapse(props) {
         
         </button>
                 </div>
-                </div>
+            
            
             
 )}

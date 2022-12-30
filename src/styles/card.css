@@ -1,42 +1,56 @@
-.contain{
-    display: flex;
-    justify-content: center;
+/* à revoir */
+.Contain{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+.Cards{
+  border-radius: 25px;
+  background-color: #f7f7f7;
+  width: 80%;
+  gap: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 40px 20px;
+  margin-top: 7rem;
+  
+}
+
 .Card a{
     text-decoration: none;
 }
-.Cards{
-    border-radius: 25px;
-    background-color: #f7f7f7;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    object-fit: cover;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    padding: 40px 40px 20px 20px;
-    margin-top: 7rem;
-    
+.Card{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 340px;
+  height: 340px;
+  margin-top: 20px;
 }
+.Card_content{
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  top: 0;
+  left: 0;
 
-.Cover {
-    width: 100%;
+}
+.Card_cover {
+    width: 340px;
     height: 340px;
     display: block;
     object-fit: cover;
-    border-radius: 10px;
   }
 
-  .Box_Title{
-    margin-top: 20px;
-  }
-.Title{
+.Card_title{
   font-size: 18px;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   position: relative;
-  top: 21rem;
+  margin-top: 280px;
   color: #ffffff;
    
 }

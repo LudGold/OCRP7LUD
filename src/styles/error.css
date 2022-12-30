@@ -17,8 +17,13 @@
     margin-bottom: 140px;
     
 }
-.returnHome{
+.returnHome {
 font-size: 18px;
+
+
+}
+li{
+list-style: none;
 }
 
 

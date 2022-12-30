@@ -8,25 +8,21 @@ function Header() {
   return (
       <section className="container_header">
         <div className="header">
-            {/* utiliser navlink pour savoir si c'est actif ou non 
-            <NavLink
-          className={({ isActive }) =>
-            isActive ? "nav_link active" : "nav_link"
-          }
-          to="/about"
-        >
-          À Propos
-        </NavLink> */}
-            <nav className='lmj-nav'>
+          
+            
                 <img className="lmj-logo-kasa" src="/kasa-logo.png"  alt="logo Kasa"></img>
-                <ul>
-                    <li>
-                    <NavLink to="/" className="accueil">Accueil</NavLink>
-                    </li>
-                    <li>
-                    <NavLink to="/about" className="about">A propos</NavLink>
-                    </li>
-                </ul>
+                <nav className='lmj-nav'>
+          <NavLink to="/" className={({ isActive }) => {
+            return isActive ? "nav_link_active" : "";
+          }}>Accueil</NavLink>
+                  
+                   
+          <NavLink to="/about" className={({ isActive }) => {
+            return isActive ? "nav_link_active" : "";
+          }}>
+            A propos
+          </NavLink>
+               
             </nav>
         
        

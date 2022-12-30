@@ -25,33 +25,37 @@ export default function OneFlat() {
   return (
     <div id="flat_select">
       <Header />
-
-      <Gallery pictures={pictures} />
-      <div className="flat_content">
-        <div className="flat_box">
+      <div className="flat_page">
+        <Gallery pictures={pictures} />
+        <div className="flat_content">
           <div className="flat_information">
             <h1 className="flat_title">{title} </h1>
             <div className="flat_location"> {location}</div>
-            <div className="tags">
+            <div className="flat_tags">
               {Tags.map((tag, oneTag) => (
                 <button key={oneTag} className="tag">
                   {tag}
                 </button>
               ))}
             </div>
+            </div>
+            <div className="flat_host">
             <div className="flat_proprietaire">
-              <div className="flat_guy">{host.name.split()}
-              
-                <img className="img_proprio" src={host.picture} alt="propriétaire"></img></div>
+              <div className="flat_guy">
+                {host.name.split("  ")}
                 </div>
-            <div className="stars">
-              <Stars ranking={selectFlat.rating}></Stars>
-              </div>
+                <img
+                  className="flat_img_proprio"
+                  src={host.picture}
+                  alt="propriétaire"
+                ></img>
              
-
-           
+            </div>
+            <div className="flat_stars">
+              <Stars props={selectFlat.rating}></Stars>
+            </div>
           </div>
-
+          </div>
           <div className="flat_description">
             <Collapse
               title={"Description"}
@@ -60,15 +64,14 @@ export default function OneFlat() {
             <Collapse
               title={"Equipements"}
               description={equipments.map((equ) => (
-                <li className="équipement_list" key={equ}>
+                <li className="equipment_list" key={equ}>
                   {equ}
                 </li>
               ))}
             />
           </div>
-        </div>
+     
       </div>
-
       <Footer />
     </div>
   );

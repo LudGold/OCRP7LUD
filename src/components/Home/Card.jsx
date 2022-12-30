@@ -21,14 +21,16 @@ function Card() {
         getFlat()
     }, []); */
       return (
-      <section className="contain">
+      <section className="Contain">
         <div className="Cards">
             {Datas.map((flat) => {
               return (
                 <div className="Card" key={flat.id} >
                   <a href={"/oneflat/" + flat.id} >
-                    <h2 className="Title">{flat.title}</h2>
-                    <img className="Cover" src={flat.cover} alt="Logement"></img>
+                    <div className="Card_content">
+                      <p className="Card_title">{flat.title}</p>
+                      </div>
+                    <img className="Card_cover" src={flat.cover} alt="Logement"></img>
 
                   </a>
                 </div>)

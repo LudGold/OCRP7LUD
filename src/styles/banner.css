@@ -1,40 +1,41 @@
+.banner{
+  position: relative;
+  width: 95%;
+}
 .img-banner{
-  position: absolute; 
-   object-fit: cover;
-   height: 255px;
-   left: 100px;
-   top: 170px;
-   filter: brightness(70%);
-   border-radius: 25px;
+  height: 223px;
+  width: 95%;
+  border-radius: 10px;
+  filter: brightness(70%);
+  z-index: -1;
+  object-fit: cover;
+  margin-left: 3rem;
       
    } 
-   .about-banner_home{
-    width: 90%;
-    border-radius: 25px;
-    margin-left: 1rem;
-   }
-   .img-banner{
-    width: 90%;
-   }
-   
+  
    .title-banner{
        color: #FFFFFF;
-       margin-top: 11rem;
+       top: 0;
+       width: 100%;
        font-family: Montserrat;
        display: flex;
+       left: 0;
        justify-content: center;
-       position: relative;
+       align-items: center;
+       height: 85%;
+       position: absolute;
        z-index: 1; 
        font-size: 48px;
        font-style: normal;
+       font-weight: 500;
        
    }
    @media only screen and (max-width: 768px) {
     .title-banner{
-      font-size: 32px;
+    font-size: 24px;
     text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 0 10px;
+    
     }
 
    }
