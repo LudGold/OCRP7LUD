@@ -1,5 +1,5 @@
 .about_container{
-  width: 80%;
+  width: 1023px;
   height: auto;
   margin: 10px auto 0;
 }
@@ -10,7 +10,7 @@ img.about_banner_mob{
   .about-banner_home{
     width: 86%;
     object-fit: cover;
-    margin-left: 50px;
+    margin-left: 163px;
     mix-blend-mode: darken;
     border-radius: 25px;
     filter: brightness(50%);

@@ -1,11 +1,13 @@
- .flat_select{
+ #flat_select{
     padding: 0;
+    margin-left: 100px;
  }
  
  
 .flat_content{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    
  }
 
 .flat_information{
@@ -47,18 +49,21 @@
     font-weight: 500;
     height: 25px;
     border: none;
+    width: 115px;
     font-size: 14px;
     margin-top: 20px;
     margin-left: 10px;
 
 }
-
+.text_description{
+    font-size: 18px;
+}
 .flat_description{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 30px;
+    
 }
-
 
 .flat_img_proprio{
     border-radius: 50%;
@@ -83,8 +88,4 @@
     width: min-content;
 }
 
-.flat_host{
-    margin-right: 50px;
-    position: absolute;
-    left: 100rem;
-}
+

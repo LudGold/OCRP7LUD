@@ -6,34 +6,28 @@ img.gallery_img{
 }
 .gallery_arrows{
   display: flex;
-  flex-direction: row;
   position: absolute;
-  top: 18rem;
-  left: 18rem;
-
-
+  top: 47%;
+  width: 79%;
+  justify-content: space-between;
+  
 }
 .gallery_arrowLeft {
-  position: relative;
-  left: 40px;
+    margin-left: 26px;
 
 }
 
   .gallery_arrowRight {
-    position: relative;
-    left: 70rem; 
-        
+    margin-right: 26px; 
   }
 
   .gallery_count{
     position: relative;
-    left: 40rem;
-    top: -2rem; 
+    left: 50%;
+    bottom: 50px; 
     color: #FFFF;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
-    font-family: 'Montserrat'
-    ;
-
+    font-family: 'Montserrat';
+    
   }
-   

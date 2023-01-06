@@ -1,6 +1,7 @@
 .banner{
   position: relative;
-  width: 95%;
+  width: 90%;
+  margin-left: 70px;
 }
 .img-banner{
   height: 223px;
@@ -15,7 +16,7 @@
   
    .title-banner{
        color: #FFFFFF;
-       top: 0;
+       top: -10%;
        width: 100%;
        font-family: Montserrat;
        display: flex;

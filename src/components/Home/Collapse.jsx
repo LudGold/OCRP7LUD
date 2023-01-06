@@ -21,7 +21,7 @@ export default function Collapse(props) {
                 <img src="/arrow_up.png" alt="flèche du haut" />
                     </button>
                     </div>
-                <p className="collapse-description">
+                <p className="collapse-description ">
                 {props.description}
             </p>
             </div>

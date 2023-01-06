@@ -28,6 +28,7 @@
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 24px;
+    margin-left: 30px;
     
 
 }
@@ -35,13 +36,16 @@
  .collapse-description{
     background: #f6f6f6;
     color: #ff6060;
-    width: 1023px;
-    height: 47px;
+    width: 1000px;
+    height: auto;
+    padding-top : 20px ;
+    padding-left: 21px;
     margin-top: 0;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Montserrat';
     font-weight: 400;
     line-height: 34px;
+    border-radius: 5px;
     
     
 }

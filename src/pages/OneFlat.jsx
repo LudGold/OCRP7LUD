@@ -59,7 +59,7 @@ export default function OneFlat() {
           <div className="flat_description">
             <Collapse
               title={"Description"}
-              description={selectFlat.description}
+            description={<p className="text_description">{selectFlat.description}</p>}
             />
             <Collapse
               title={"Equipements"}
