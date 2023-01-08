@@ -4,7 +4,7 @@ import "../styles/oneFlat.css";
 import Datas from "../datas/flat.json";
 import Header from "../components/home/Header";
 import Footer from "../components/home/Footer";
-/* import useEffect from "react" */
+
 import { useParams, Navigate } from "react-router-dom";
 /* import { useState } from "react" */
 import Gallery from "../components/Gallery";
@@ -38,40 +38,48 @@ export default function OneFlat() {
                 </button>
               ))}
             </div>
-            </div>
-            <div className="flat_host">
+          </div>
+          <div className="flat_host">
             <div className="flat_proprietaire">
-              <div className="flat_guy">
-                {host.name.split("  ")}
-                </div>
-                <img
-                  className="flat_img_proprio"
-                  src={host.picture}
-                  alt="propriétaire"
-                ></img>
-             
+              <div className="flat_guy">{host.name.split("  ")}</div>
+              <img
+                className="flat_img_proprio"
+                src={host.picture}
+                alt="propriétaire"
+              ></img>
             </div>
             <div className="flat_stars">
               <Stars props={selectFlat.rating}></Stars>
             </div>
           </div>
-          </div>
+        </div>
+
+        <div className="flat_collapse">
           <div className="flat_description">
             <Collapse
               title={"Description"}
-            description={<p className="text_description">{selectFlat.description}</p>}
-            />
-            <Collapse
-              title={"Equipements"}
-              description={equipments.map((equ) => (
-                <li className="equipment_list" key={equ}>
-                  {equ}
-                </li>
-              ))}
+              description={
+                <p className="txt_description">{selectFlat.description}</p>
+              }
             />
           </div>
-     
+          <div className="flat_equipement">
+          <Collapse
+            title={"Equipements"}
+            description={
+              <p className="bloc_equipement">
+                {equipments.map((equ) => (
+                  <li className="equipment_list" key={equ}>
+                    {equ}
+                  </li>
+                ))}
+              </p>
+            }
+          />
+          </div>
+        </div>
       </div>
+
       <Footer />
     </div>
   );

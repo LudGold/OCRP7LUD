@@ -5,9 +5,9 @@ export default function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false);
 
     return isOpen ? (
-        <div className="collapse">
+        <div className="collapse_open">
             
-            <div className="collapse_encart_opened">
+            <div className="collapse_encart_opened ">
             <p className="collapse-title">
                 {props.title}
             </p>
@@ -21,15 +21,14 @@ export default function Collapse(props) {
                 <img src="/arrow_up.png" alt="flèche du haut" />
                     </button>
                     </div>
-                <p className="collapse-description ">
+                <p className="collapse-description">
                 {props.description}
             </p>
             </div>
          
     ):(
   
-   
-            
+            <div className="collapse_closed ">
                 <div className="collapse_encart_closed">
                 <p className="collapse-title">
                 {props.title}
@@ -43,6 +42,7 @@ export default function Collapse(props) {
         
         </button>
                 </div>
+            </div>
             
            
             

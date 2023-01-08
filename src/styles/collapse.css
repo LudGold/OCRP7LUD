@@ -17,7 +17,7 @@
    
 }
 
-.collapse{
+.collapse_closed, .collapse_open{
     align-items: flex-start;
     font-family: 'Montserrat';
     
@@ -62,17 +62,6 @@ margin-top: 20px;
 
 
 }
-
-/* .collapse_down{
-    background-color: #ff6060;
-    border-radius: 10px;
-     
-}
-
-.collapse_up{
-    width: 582px;
-    height: 52px;
-} */
 
 .collapse_encart_opened{
     background-color: #ff6060;

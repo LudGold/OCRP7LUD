@@ -8,7 +8,7 @@ img.gallery_img{
   display: flex;
   position: absolute;
   top: 47%;
-  width: 79%;
+  width: 75%;
   justify-content: space-between;
   
 }
@@ -16,9 +16,8 @@ img.gallery_img{
     margin-left: 26px;
 
 }
-
   .gallery_arrowRight {
-    margin-right: 26px; 
+    margin-right: 25px; 
   }
 
   .gallery_count{
