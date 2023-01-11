@@ -1,52 +1,63 @@
- body{
-    margin: 0;
-    max-width: 1600px;
-} 
-.container_header{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+body {
+  margin: 0;
+  max-width: 1600px;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 85%;
-    height: 68px;
-;
+.container_header {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
+.lmj-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  width: 85%;
+  height: 100px;
+}
+
 .lmj-logo-kasa {
   margin-top: 20px;
   height: 70px;
-  } 
-
-.lmj-nav{
-    margin-top: 20px;
-    
 }
-.lmj-nav a {
-text-decoration: none;
-font-weight: 400;
-font-size: 24px;
-color: #FF6060;
-font-family: 'Montserrat';
-margin-left: 50px;
+.nav_link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ff6060;
+  font-family: "Montserrat";
+  margin-left: 40px;
 }
-.nav_link_active {
-    
-    text-decoration: underline;
-    }
-    
+.active {
+  text-decoration: underline;
+  color: #ff6060;
+  font-family: "Montserrat";
+}
 
 @media only screen and (max-width: 768px) {
-
-    .lmj-logo-kasa{
-        height: 65px;
-    }
-   .header{
+  .lmj-logo-kasa {
+    height: 50px;
+    margin-top: 20px;
     width: auto;
-   }
+  }
+  .container_header {
+    width: auto;
+    margin: 0px;
+  }
+  .lmj-nav {
+    margin-left: 25px;
+    width: 100%;
+  }
+  .nav_link {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
-
+@media only screen and (max-width: 550px) {
+  .nav-item {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+  }
+}

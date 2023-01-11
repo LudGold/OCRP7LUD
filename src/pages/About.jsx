@@ -9,22 +9,25 @@ import Collapse from "../components/home/Collapse";
 
 export default function About() {
  return (
-   <div>
+   <div className="about_page">
      <Header />
 
-     <div className="About">
-       <img src="Banner_About_Desk.png" alt="" className="about-banner_home" />
+     <div className="about_desk">
+       <img src="banner_about_desk.png" alt="" className="about_banner_home" />
      </div>
-     <div className="About_Mob">
-       <img src="Banner_About_Mobile.png" alt="" className="about_banner_mob" />
-     </div>
+     <div className="about_mob">
+       <img src="banner_about_mobile.png" alt="" className="about_banner_mob" />
+       </div>
+     
 
      <div className="about_container">
        <Collapse
+         
          title="Fiabilité"
          description="Les annonces postées sur Kasa garantissent une fiabilité totale. 
              Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
        />
+       
        <Collapse
          title="Respect"
          description="La bienveillance fait partie des valeurs fondatrices de Kasa. 

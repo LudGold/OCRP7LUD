@@ -4,20 +4,23 @@ img.gallery_img{
   object-fit: cover;
   border-radius: 25px;
 }
-.gallery_arrows{
-  display: flex;
-  position: absolute;
-  top: 47%;
-  width: 75%;
-  justify-content: space-between;
-  
+
+ 
+.gallery_image{
+  position: relative;
 }
 .gallery_arrowLeft {
-    margin-left: 26px;
-
+    position: absolute;
+    left: 0;
+    top: 40%;
+    margin-left: 10px;
+    
 }
   .gallery_arrowRight {
-    margin-right: 25px; 
+    position: absolute;
+    right: 0;
+    top: 40%;
+    margin-right: 10px;
   }
 
   .gallery_count{
@@ -30,3 +33,20 @@ img.gallery_img{
     font-family: 'Montserrat';
     
   }
+  @media only screen and (max-width: 768px) {
+    .img_arrowLeft{
+      width: 12px;
+      height: 20px;
+    }
+    .img_arrowRight{
+      width: 12px;
+      height: 20px;
+    }
+    img.gallery_img{
+      border-radius: 10px;
+
+  }
+
+  .gallery_count{
+    display: none;
+  }}

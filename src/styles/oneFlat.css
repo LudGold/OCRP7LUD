@@ -1,123 +1,163 @@
-  #flat_select{
-    padding: 0;
-    margin-left: 100px;
-    width: 100%;
-     } 
-     #flat_select .container_header{
-        display: flex;
-        justify-content: space-between;
-        
-     }
-     #flat_select .header{
-        width: 100%;
-     }
-  
-.flat_content{
-    display: flex;
-    justify-content: space-between;
-     }
+#flat_select {
+  padding: 0;
+  margin-left: 100px;
+  width: 100%;
+}
+#flat_select .container_header {
+  display: flex;
+  justify-content: space-between;
+}
+#flat_select .header {
+  width: 100%;
+}
 
-.flat_information{
-    margin-top: 20px;
+.flat_content {
+  display: flex;
+  justify-content: space-between;
 }
-.flat_title
-{
-    color: #ff6060;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    height: 51px;
-    font-size: 36px;
-    line-height: 51.34px;
-    margin-top: 0;
-    margin-bottom: 0;
+
+.flat_title {
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-weight: 500;
+  height: 51px;
+  font-size: 36px;
+  line-height: 51.34px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.flat_stars{
+.flat_stars {
+  display: flex;
+  justify-content: flex-end;
+}
+.flat_location {
+  font-family: "Montserrat";
+  color: #ff6060;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.flat_tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag {
+  background: #ff6060;
+  color: #ffffff;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  height: auto;
+  border: none;
+  width: 115px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.flat_img_proprio {
+  border-radius: 50%;
+  width: 64px;
+  margin-left: 10px;
+}
+
+.flat_proprietaire {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.flat_guy {
+  width: min-content;
+}
+.flat_collapse {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.txt_description {
+  font-size: 18px;
+  padding-bottom: 60px;
+  line-height: 25px;
+}
+.flat_collapse .collapse_encart_closed {
+  width: 700px;
+}
+.flat_collapse .collapse_encart_opened {
+  width: 700px;
+}
+.flat_collapse .collapse-description {
+  width: 680px;
+  line-height: 25px;
+}
+.flat_equipement {
+  width: 547px;
+}
+.equipment_list {
+  font-size: 18px;
+}
+.bloc_equipement {
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flat_collapse {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .flat_content {
+    flex-direction: column;
+  }
+  .flat_host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .flat_stars {
+    width: 15px;
+    height: 15px;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .flat_collapse .collapse_encart_closed {
+    width: 100%;
+  }
+  .flat_collapse .collapse_encart_opened {
+    width: 100%;
+  }
+  .flat_equipement {
+    width: 100%;
+  }
+  .txt_description{
+    width: 100%;
+  }
+  .flat_collapse .collapse-description {
+    width: 100%;
+    line-height: 25px;
+  }
+#flat_select{
+   width: 80%;
+   margin: 20px;
+   margin-top: 0;
+  
+   
+}
+.flat_title{
+    font-size: 18px;
 }
 .flat_location{
-    
-    font-family: 'Montserrat';
-    color: #ff6060;
-    margin-top: 0;
-    font-weight: 500;
-    font-size: 18px;
-}
-.flat_tags{
-    display: flex;
-    flex-wrap: wrap;
-}
-.tag{
-    background: #ff6060;
-    color: #ffffff;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    height: auto;
-    border: none;
-    width: 115px;
     font-size: 14px;
-    margin-top: 20px;
-    margin-left: 10px;
-
 }
-
-
-.flat_img_proprio{
-    border-radius: 50%;
-    width: 64px;
-    margin-left: 10px;
 }
-
-.flat_proprietaire{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color:#ff6060;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: right;
-    margin-top: 20px;
-}
-
-.flat_guy{
-    width: min-content;
-}
- .flat_collapse{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-right: 100px;
-    
-    }  
-
-.txt_description{
-    font-size: 18px;
-    padding-bottom: 25px;
-    line-height: 25px;
-   
-   }
-.flat_collapse .collapse_encart_closed{
-    width: 582px;
-}
-.flat_collapse .collapse_encart_opened{
-    width: 582px;
-}
-.flat_collapse .collapse-description{
-    width: 562px;
-    line-height: 25px;
-}
- .flat_equipement {
-    width: 582px;
-} 
-.equipment_list{
-    font-size: 18px;
-    
-  
-}
-.bloc_equipement{
-    padding-bottom: 50px;
-}
- 

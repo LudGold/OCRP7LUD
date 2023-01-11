@@ -27,11 +27,11 @@ function Gallery({ pictures }) {
                   <>
                     <div className='gallery_arrows'>
                     <div className="gallery_arrowLeft" onClick={prevSlide}>
-                                    {<img src="/arrow_left.svg" alt="arrow preview" /> }
+                                    {<img className='img_arrowLeft' src="/arrow_left.svg" alt="arrow preview" /> }
                                     
                     </div>
                     <div className="gallery_arrowRight" onClick={nextSlide}>
-                                    { <img src="/arrow_right.svg"  alt="arrow next" /> }
+                                    { <img className='img_arrowRight' src="/arrow_right.svg"  alt="arrow next" /> }
                                     
                       </div>
                     </div>
