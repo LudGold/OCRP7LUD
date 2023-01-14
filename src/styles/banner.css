@@ -1,48 +1,59 @@
  .banner-content{
   position: relative;
   
-  text-align: center;
-  
- }
+   }
 
 .img-banner{
   
-  border-radius: 10px;
+  border-radius: 25px;
   width: 85%;
+  height: 223px;
+  object-fit: cover;
+  max-width: 100%;
   filter: brightness(70%);
-  height: auto;
+  margin: 0 auto;
+  display: block;
         
    } 
   
-   .title-banner{
+  .title-banner {
        color: #FFFFFF;
-       font-family: 'Montserrat'; 
+       font-family: 'Montserrat';
+       font-weight: 500; 
+       font-style: normal;
+       font-size: 48px;
        position: absolute;
        text-align: center;
-       width: 80%; 
-       font-size: 48px;
-       font-style: normal;
-       margin: auto;
-       font-weight: 500;
-       top: 50%;
+       top: 40%;
        left: 50%;
-      transform: translate(-50%, -50%)}
-       
+       transform: translate(-50%, -50%)
+      }
+      br{
+        display: none;
+      }
+      
    
 
    @media only screen and (max-width: 768px) {
     .title-banner{
     font-size: 24px;
-      
+    text-align: left;
+    margin-left: -30px;
+    margin-right: -30px;
+          
     }
-    .banner-content{
-      margin-left: 0;
-    }
+   br{
+    display: initial;
+   }
+   
   .img-banner{
-    max-width: 600px;
+    width: 335px;
+    height: 111px;
+    border-radius: 10px;
+   
     
    
   
-  }
+  } 
   }
     

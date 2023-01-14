@@ -1,7 +1,7 @@
 #flat_select {
   padding: 0;
-  margin-left: 100px;
-  width: 100%;
+  
+  width: 80%;
 }
 #flat_select .container_header {
   display: flex;
@@ -95,10 +95,10 @@
 .flat_collapse .collapse_encart_opened {
   width: 700px;
 }
-.flat_collapse .collapse-description {
+/*  modifier dans collapse.css  .flat_collapse .collapse-description {
   width: 680px;
   line-height: 25px;
-}
+}  */
 .flat_equipement {
   width: 547px;
 }
@@ -140,24 +140,20 @@
   .flat_equipement {
     width: 100%;
   }
-  .txt_description{
+  .txt_description {
     width: 100%;
   }
-  .flat_collapse .collapse-description {
-    width: 100%;
+ /*  .flat_collapse  .collapse-description {
+    width: 90%;
     line-height: 25px;
+  } */
+  #flat_select {
+    width: 80%;
   }
-#flat_select{
-   width: 80%;
-   margin: 20px;
-   margin-top: 0;
-  
-   
-}
-.flat_title{
+  .flat_title {
     font-size: 18px;
-}
-.flat_location{
+  }
+  .flat_location {
     font-size: 14px;
-}
+  }
 }

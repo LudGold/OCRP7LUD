@@ -1,25 +1,23 @@
-body {
-  margin: 0;
-  max-width: 1600px;
-}
+
 .container_header {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  
 }
 .lmj-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 100px;
-  margin-left: 50px;
-  width: 85%;
+  
+  width: 83%;
   height: 100px;
 }
 
 .lmj-logo-kasa {
   margin-top: 20px;
-  height: 70px;
+  height: 50px;
 }
 .nav_link {
   text-decoration: none;
@@ -37,27 +35,22 @@ body {
 
 @media only screen and (max-width: 768px) {
   .lmj-logo-kasa {
-    height: 50px;
+    height: 30px;
     margin-top: 20px;
     width: auto;
   }
   .container_header {
     width: auto;
     margin: 0px;
+   
   }
-  .lmj-nav {
-    margin-left: 25px;
-    width: 100%;
+ .lmj-nav {
+    margin-bottom: 40px;
   }
   .nav_link {
-    font-size: 18px;
+    font-size: 12px;
     text-transform: uppercase;
   }
 }
-@media only screen and (max-width: 550px) {
-  .nav-item {
-    flex-wrap: nowrap;
-    display: flex;
-    align-items: center;
-  }
-}
+
+

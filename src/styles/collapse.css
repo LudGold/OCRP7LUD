@@ -1,15 +1,19 @@
-/* chevrons pour collapse */
-.dropdown_up {
-  width: 20px;
-  transform: rotate(0deg);
+ /* chevrons pour collapse 
+ .dropdown_up {
+ width: 20px;
+  transform: rotate(0deg); 
   border: none;
+  outline: none;
+  cursor: pointer;
   background: transparent;
   margin-right: 63px;
 }
 
 .dropdown_down {
-  width: 20px;
-  transform: rotate(0deg);
+  /* width: 20px; */
+  /* transform: rotate(0deg); */
+  /* outline: none;
+  cursor: pointer;
   background: transparent;
   border: none;
   margin-right: 63px;
@@ -17,7 +21,7 @@
 
 .collapse_closed,
 .collapse_open {
-  align-items: flex-start;
+  
   font-family: "Montserrat";
 }
 .collapse-title {
@@ -64,12 +68,99 @@
   width: 1023px;
   height: 47px;
   margin-top: 20px;
+} */   
+.collapse_open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff6060;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
 }
+.collapse_open_block{
+  background-color: #F7F7F7;
+  width: 100%;
+ 
+}
+
+.collapse_encart_opened {
+  display: flex;
+  align-items: center;
+ 
+  justify-content: space-between;
+  width: 100%;
+}
+
+.collapse-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.dropdown_up {
+  background-color: #ff6060;
+  border: none;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.collapse-description {
+  
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 30px;
+  color: #ff6060;
+  background: #F7F7F7;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 34px;
+  border-radius: 5px;
+}
+
+.collapse_closed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-bottom: 10px;
+  background-color: #ff6060;
+  border-radius: 5px;
+  
+}
+
+.collapse_encart_closed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown_down {
+  background-color: #ff6060;
+  border: none;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
-    .collapse_encart_opened, .collapse_encart_closed{
-        width: 335px;
-    }
+    
     .collapse-description{
-        width: 315px;
+        font-size: 12px;
+        line-height: 12px;
     }
+    .collapse-title{
+      font-size: 12px;
+    }
+    .collapse_closed{
+      width: 100%;
+    }
+    
 }

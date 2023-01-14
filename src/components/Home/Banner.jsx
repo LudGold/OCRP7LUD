@@ -10,7 +10,7 @@ export default function Banner() {
         alt="Paysage côte rocheuse"
         className="img-banner"
       />
-      <h1 className="title-banner"> Chez vous, partout et ailleurs</h1>
+      <h1 className="title-banner">Chez vous,<br/> partout et ailleurs</h1>
                  
                   </div>
   );
