@@ -2,7 +2,7 @@
 .container_header {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  
   
 }
 .lmj-nav {
@@ -45,7 +45,9 @@
    
   }
  .lmj-nav {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: -20px;
   }
   .nav_link {
     font-size: 12px;
