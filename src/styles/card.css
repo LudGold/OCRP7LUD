@@ -5,7 +5,7 @@
 .Cards {
   border-radius: 25px;
   background-color: #f7f7f7;
-  gap: 10%;
+  gap: 8%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,7 +17,7 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .Card_content {
   position: absolute;
@@ -47,15 +47,15 @@
     margin: 0;
     padding: 0;
   }
-  .Card_cover{
+  .Card_cover {
     width: 335px;
     height: 255px;
   }
-  .Card_title{
+  .Card_title {
     top: 190px;
     font-size: 18px;
   }
-  .card{
+  .Card {
     margin-top: 20px;
   }
 }

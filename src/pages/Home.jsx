@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/home/Footer";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import Banner from "../components/home/Banner";
-import Header from "../components/home/Header";
 import Card from "../components/home/Card";
 
 export default function Home() {

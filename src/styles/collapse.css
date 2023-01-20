@@ -2,11 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 30px;
 }
+.collapse_closed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #ff6060;
+  border-radius: 5px;
+}
+
 .collapse_open_block {
   background-color: #f7f7f7;
   height: 200px;
@@ -51,14 +59,6 @@
   line-height: 34px;
 }
 
-.collapse_closed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  background-color: #ff6060;
-  border-radius: 10px;
-}
 
 .collapse_encart_closed {
   display: flex;

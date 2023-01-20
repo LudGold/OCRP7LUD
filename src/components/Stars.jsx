@@ -1,6 +1,4 @@
 import React from "react";
-import "../styles/stars.css";
-/* import styled from 'styled-components' */
 
 export default function Stars(props) {
   const stars_array = [1, 2, 3, 4, 5];

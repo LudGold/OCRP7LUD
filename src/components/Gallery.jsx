@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "../styles/gallery.css";
 
 function Gallery({ pictures }) {
   const [currentPicture, setCurrentPicture] = useState(0);

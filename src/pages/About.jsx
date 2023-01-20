@@ -1,6 +1,6 @@
 import React from "react";
-/* import "../styles/about.css"; */
-import Header from "../components/home/Header";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import Collapse from "../components/Collapse";
 
 export default function About() {
@@ -43,6 +43,7 @@ export default function About() {
              En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
       </div>
+      <Footer />
     </div>
   );
 }
