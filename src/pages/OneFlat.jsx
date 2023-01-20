@@ -6,7 +6,7 @@ import Header from "../components/home/Header";
 import Footer from "../components/home/Footer";
 import { useParams, Navigate } from "react-router-dom";
 import Gallery from "../components/Gallery";
-import Stars from "../components/stars";
+import Stars from "../components/Stars";
 import Collapse from "../components/Collapse";
 
 export default function OneFlat() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/about.css";
+/* import "../styles/about.css"; */
 import Header from "../components/home/Header";
 import Collapse from "../components/Collapse";
 
