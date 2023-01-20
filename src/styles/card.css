@@ -1,70 +1,58 @@
-
-.Contain{
+.Contain {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
-.Cards{
+.Cards {
   border-radius: 25px;
   background-color: #f7f7f7;
-  width: 85%;
   gap: 10%;
   display: flex;
   flex-wrap: wrap;
-  object-fit: cover;
   justify-content: center;
-  align-items: center;
   padding: 40px 0 40px 0;
   margin-top: 30px;
-  
 }
 
-.Card a{
-    text-decoration: none;
-}
-.Card{
+.Card {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  width: 340px;
-  height: 340px;
   margin-top: 20px;
 }
-.Card_content{
+.Card_content {
   position: absolute;
   width: 340px;
   height: 340px;
-  top: 0;
-  left: 0;
-
 }
 .Card_cover {
-    width: 340px;
-    height: 340px;
-    display: block;
-    object-fit: cover;
-  }
+  width: 340px;
+  height: 340px;
+  display: block;
+  object-fit: cover;
+}
 
-.Card_title{
+.Card_title {
   font-size: 18px;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   position: relative;
-  margin-top: 280px;
+  top: 270px;
   color: #ffffff;
   width: 70%;
   margin-left: 20px;
-   
 }
 @media only screen and (max-width: 768px) {
-.Cards{
-  background: none;
-  margin-top: 0;
-  padding: 0;
- 
-
+  .Cards {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+  .Card_cover{
+    width: 335px;
+    height: 255px;
+  }
+  .Card_title{
+    top: 190px;
+    font-size: 18px;
+  }
 }
-  
-}
-
-

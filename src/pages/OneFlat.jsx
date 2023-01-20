@@ -4,12 +4,10 @@ import "../styles/oneFlat.css";
 import Datas from "../datas/flat.json";
 import Header from "../components/home/Header";
 import Footer from "../components/home/Footer";
-
 import { useParams, Navigate } from "react-router-dom";
-/* import { useState } from "react" */
 import Gallery from "../components/Gallery";
 import Stars from "../components/stars";
-import Collapse from "../components/home/Collapse";
+import Collapse from "../components/Collapse";
 
 export default function OneFlat() {
   const { id } = useParams();
@@ -64,18 +62,18 @@ export default function OneFlat() {
             />
           </div>
           <div className="flat_equipement">
-          <Collapse
-            title={"Equipements"}
-            description={
-              <p className="bloc_equipement">
-                {equipments.map((equ) => (
-                  <li className="equipment_list" key={equ}>
-                    {equ}
-                  </li>
-                ))}
-              </p>
-            }
-          />
+            <Collapse
+              title={"Equipements"}
+              description={
+                <p className="bloc_equipement">
+                  {equipments.map((equ) => (
+                    <li className="equipment_list" key={equ}>
+                      {equ}
+                    </li>
+                  ))}
+                </p>
+              }
+            />
           </div>
         </div>
       </div>
@@ -84,87 +82,3 @@ export default function OneFlat() {
     </div>
   );
 }
-
-/* const [flats, setFlats] = useState([]);
-  
-      const getFlat = () => {
-          fetch('flat.json')
-              .then(res => {
-                  return res.json();
-              })
-              .then(fetchedFlat => {
-                      setFlats(id)
-                  const selectFlat = fetchedFlat.find((flat) => id === flat.id)
-  
-                  if (!selectFlat) {
-                      return ("/erreur");
-                  }
-              })
-          
-              .catch(err => console.log(err))
-      }
-      useEffect(() => {
-          getFlat()
-      }, []); */
-
-/*   const [flats, setFlats] = useState([]);
-    const getFlat = () => {
-        fetch('flat.json')
-                    
-            .then(res => {
-                return res.json();
-            })
-            .then(fetchedFlats => {
-                setFlats(fetchedFlats)
-                const selectFlat = flat.find((flat) => id === flat.id);
-                
-            })
-            
-            .catch(err => console.log(err))
-    
-        useEffect(() => {
-            getFlat()
-        }, []);
-    } */
-
-/*  const { description, title } = selectFlat;
- */
-
-/* const [flats, setFlats] = useState([]);
-      
-          const getFlat = () => {
-              fetch('flat.json')
-                  .then(res => {
-                      return res.json();
-                  })
-                  .then(fetchedFlat => {
-                          setFlats(id)
-                      const selectFlat = fetchedFlat.find((flat) => id === flat.id)
-      
-                      if (!selectFlat) {
-                          return ("/erreur");
-                      }
-                  })
-              
-                  .catch(err => console.log(err))
-          }
-          useEffect(() => {
-              getFlat()
-          }, []); */
-
-/* return (
-            <div id="flat_select">
-                {/* components gallery */
-/*        <div className="flat_content">
-                    <div className="flat_box">
-                        <div className="flat_information">
-                            <h1>{title}</h1>
-                            <p>{description}</p>
-                            {/* iterer sur tags  et collapse*/
-/*       </div>
-
-                        <div className="flat_guy">{/* contact et photo */
-/*             <div className="stars"></div>
-                    </div>
-                </div>
-            </div> */
