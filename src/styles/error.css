@@ -3,9 +3,11 @@
   flex-direction: column;
   align-items: center;
 }
+
 .error {
   margin-top: 100px;
 }
+
 .error-txt {
   color: #ff6060;
   font-weight: 500;
@@ -14,11 +16,13 @@
   margin-top: 60px;
   margin-bottom: 140px;
 }
+
 .returnHome {
   font-size: 18px;
   color: #ff6060;
   font-family: Montserrat;
 }
+
 li {
   list-style: none;
 }
@@ -27,9 +31,11 @@ li {
   .error {
     width: 200px;
   }
-  .returnHome{
+
+  .returnHome {
     font-size: 14px;
   }
+
   .error-txt {
     font-size: 18px;
     margin: 25px 58px 100px 80px;

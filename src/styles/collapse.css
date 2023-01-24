@@ -6,6 +6,7 @@
   border-radius: 5px;
   margin-bottom: 30px;
 }
+
 .collapse_closed {
   display: flex;
   align-items: center;
@@ -82,24 +83,30 @@
     line-height: 17px;
     margin-left: 15px;
   }
+
   .collapse-title {
     font-size: 13px;
     margin: 10px;
   }
+
   .collapse_closed {
     width: 100%;
   }
+
   .collapse_open {
     width: 100%;
     height: 200px;
   }
+
   .dropdown_down,
   .dropdown_up {
     margin: 0;
   }
+
   .chevron_bas {
     width: 25px;
   }
+
   .chevron_haut {
     width: 22px;
   }

@@ -15,14 +15,17 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .flat_stars {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .flat_stars img {
   margin: 0 10px 0 0;
 }
+
 .flat_location {
   font-family: "Montserrat";
   color: #ff6060;
@@ -30,10 +33,12 @@
   font-weight: 500;
   font-size: 18px;
 }
+
 .flat_tags {
   display: flex;
   flex-wrap: wrap;
 }
+
 .tag {
   background: #ff6060;
   color: #ffffff;
@@ -71,6 +76,7 @@
   width: min-content;
   font-size: 18px;
 }
+
 .flat_collapse {
   display: flex;
   justify-content: space-between;
@@ -90,6 +96,7 @@
   font-size: 18px;
   line-height: 25px;
 }
+
 .equipment_list {
   font-size: 18px;
   line-height: 25px;
@@ -100,24 +107,29 @@
     margin: auto;
     width: 90%;
   }
+
   .flat_collapse {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
   }
+
   .flat_content {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .flat_information {
     width: 100%;
   }
+
   .tag {
     width: auto;
     font-size: 10px;
     border-radius: 5px;
     height: 18px;
   }
+
   .flat_host {
     display: flex;
     flex-direction: row-reverse;
@@ -125,31 +137,39 @@
     width: 100%;
     margin-bottom: -25px;
   }
+
   .flat_proprietaire {
     margin-left: 150px;
   }
+
   .flat_stars {
     width: 15px;
     height: 15px;
     margin-top: 40px;
     margin-left: 10px;
   }
+
   .flat_stars img {
     margin: 0 5px 0 0;
   }
-.flat_guy{
-  font-size: 12px;
-}
+
+  .flat_guy {
+    font-size: 12px;
+  }
+
   .flat_equipement {
     width: 100%;
   }
+
   .equipment_list {
     font-size: 12px;
     line-height: 17px;
   }
+
   .flat_description {
     width: 100%;
   }
+
   .txt_description {
     width: 100%;
     font-size: 12px;
@@ -158,11 +178,13 @@
   #flat_select {
     width: 100%;
   }
+
   .flat_title {
     font-size: 18px;
     line-height: 25px;
     height: auto;
   }
+
   .flat_location {
     font-size: 14px;
   }

@@ -2,6 +2,7 @@
   display: flex;
   margin-top: 20px;
 }
+
 .Cards {
   border-radius: 25px;
   background-color: #f7f7f7;
@@ -19,11 +20,13 @@
   overflow: hidden;
   margin-top: 50px;
 }
+
 .Card_content {
   position: absolute;
   width: 340px;
   height: 340px;
 }
+
 .Card_cover {
   width: 340px;
   height: 340px;
@@ -41,20 +44,24 @@
   width: 70%;
   margin-left: 20px;
 }
+
 @media only screen and (max-width: 768px) {
   .Cards {
     background: none;
     margin: 0;
     padding: 0;
   }
+
   .Card_cover {
     width: 335px;
     height: 255px;
   }
+
   .Card_title {
     top: 190px;
     font-size: 18px;
   }
+
   .Card {
     margin-top: 20px;
   }

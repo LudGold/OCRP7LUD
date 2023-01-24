@@ -9,6 +9,7 @@ img.gallery_img {
 .gallery_image {
   position: relative;
 }
+
 .gallery_arrowLeft {
   position: absolute;
   left: 0;
@@ -16,6 +17,7 @@ img.gallery_img {
   cursor: pointer;
   margin-left: 10px;
 }
+
 .gallery_arrowRight {
   position: absolute;
   right: 0;
@@ -33,15 +35,18 @@ img.gallery_img {
   font-weight: 500;
   font-family: "Montserrat";
 }
+
 @media only screen and (max-width: 768px) {
   .img_arrowLeft {
     width: 12px;
     height: 20px;
   }
+
   .img_arrowRight {
     width: 12px;
     height: 20px;
   }
+
   img.gallery_img {
     border-radius: 10px;
     height: auto;

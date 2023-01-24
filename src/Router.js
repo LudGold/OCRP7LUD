@@ -7,9 +7,9 @@ import OneFlat from './pages/OneFlat'
 
 export default function Router() {
   return (
-       
+
     <div className="Routes" >
-         
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/oneflat/:id" element={<OneFlat />} />

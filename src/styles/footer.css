@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,18 +8,16 @@
     background: #000000;
     margin-top: 100px;
 }
-.footer_text{
+
+.footer_text {
     margin-top: 30px;
     font-size: 24px;
-    color: #FFFFFF;}
-    
-    
-    @media only screen and (max-width: 768px) {
-        .footer{
-            margin: 0;
-        }
-        }
-  
+    color: #FFFFFF;
+}
 
 
-    
+@media only screen and (max-width: 768px) {
+    .footer {
+        margin: 0;
+    }
+}
